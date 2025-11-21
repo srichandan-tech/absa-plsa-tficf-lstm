@@ -25,23 +25,52 @@ Twitter/X: [**@wiqi_lee**](https://twitter.com/wiqi_lee)
 
 ## 📘 Research Background & Inspiration
 
-This implementation is inspired by my own peer-reviewed publication:  
+This project is directly inspired by — and expands upon — my own peer-reviewed publication:
+
 **“Sentiment Analysis of Hotel Aspect Using Probabilistic Latent Semantic Analysis, Word Embedding and LSTM”**  
-International Journal of Intelligent Engineering & Systems, 2019  
+International Journal of Intelligent Engineering & Systems (IJIES), 2019  
 DOI: **10.22266/ijies2019.0831.26**  
 PDF: https://www.inass.org/2019/2019083126.pdf
 
-The original study explored aspect extraction using **PLSA**, enhanced aspect representation using **Word Embedding**, and sentiment classification with **LSTM networks**.  
-This repository extends that foundational research into a **modernized, production-ready implementation** featuring:
+The original research explored hotel-review sentiment classification by combining:
 
-- Stronger semantic similarity mapping (AC3 + cue boosting)  
-- TF-ICF-based aspect vocabulary expansion  
-- A robust inference engine for multi-aspect prediction  
-- A polished Streamlit interface for end-to-end experimentation  
+- **PLSA** for latent aspect discovery  
+- **Word Embedding** for enriched aspect representation  
+- **LSTM networks** for sentiment classification  
 
-In contrast to the original paper, which used a smaller set of hotel aspects, this implementation adopts **six standardized aspects** for broader generalization and clearer sentiment separation:  
-**Location, Service, Cleanliness, Sleep Quality, Mark, and Like.**
+That study served as the conceptual foundation for this repository.  
+However, the implementation here has been significantly modernized, extended, and engineered for real-world applicability.
 
+### 🔧 How This Repository Evolves the Original Work
+
+Compared to the 2019 paper, which analyzed **five core hotel aspects**:
+
+1. Location  
+2. Meal  
+3. Service  
+4. Comfort  
+5. Cleanliness  
+
+This repository introduces a more flexible and comprehensive **six-aspect framework**, optimized for multilingual and modern hotel-review patterns:
+
+1. **Location**  
+2. **Service**  
+3. **Cleanliness**  
+4. **Sleep Quality** — evolved from “Comfort” to specifically capture noise, restfulness, and bed quality  
+5. **Mark (Overall Impression)** — captures holistic or summary judgments across the review  
+6. **Like (Preference Indicator)** — models generic positive preference expressions often present in newer datasets  
+
+### 🚀 What’s New in This Implementation
+
+This version incorporates several enhancements that go beyond the original academic methodology:
+
+- **AC3 semantic similarity + cue-boosting** for more accurate aspect assignment  
+- **TF-ICF (100%) vocabulary expansion** to strengthen aspect clusters  
+- A **robust multi-aspect inference engine** capable of detecting multiple aspects from a single review  
+- **GloVe-based LSTM models** (per-aspect or monolithic) for sentiment classification  
+- A **Streamlit UI** for real-time prediction, batch processing, training, and evaluation  
+
+Together, these improvements transform the original research prototype into a **production-ready, multi-aspect sentiment analysis framework** suitable for industry, research labs, and advanced academic projects.
 
 ---
 
