@@ -168,5 +168,6 @@ absa-plsa-tficf-lstm/
 
 ## 📬 Contact
 Created by **Wiqi Lee**  
-Twitter/X: **@wiqi_lee**  
+Twitter/X: [**@wiqi_lee**](https://twitter.com/wiqi_lee)  
 Feel free to reach out for collaboration or research discussion.
+
