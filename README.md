@@ -1,24 +1,23 @@
-# ABSA (Aspect-Based Sentiment Analysis) — PLSA + TF-ICF + LSTM  
-Full Multi-Aspect Pipeline with Streamlit App
+This project is also **inspired by my own published research**, titled:
 
-This project implements a complete ABSA pipeline inspired by academic work on topic modeling and aspect expansion.  
-It combines:
+**“Sentiment Analysis of Hotel Aspect Using Probabilistic Latent Semantic Analysis, Word Embedding and LSTM”**  
+International Journal of Intelligent Engineering and Systems (IJIES), 2019  
+DOI: **10.22266/ijies2019.0831.26**  
+Full text: https://www.inass.org/2019/2019083126.pdf
 
-- **PLSA** — latent topic discovery  
-- **TF-ICF (100%)** — expand vocabulary for each aspect cluster  
-- **Semantic Similarity (AC3)** — map documents to canonical aspects  
-- **GloVe Word Embedding + LSTM** — per-aspect (or mono) sentiment classifier  
-- **Streamlit Application** — for interactive inference, visualization, and optional training  
+The methodology in this repository builds upon and significantly extends the core ideas introduced in that paper—namely the integration of **PLSA for aspect discovery**, **word embedding for semantic representation**, and **LSTM for sentiment classification**.  
 
-The system predicts sentiment for **six canonical aspects**:
-- Location  
-- Service  
-- Cleanliness  
-- Sleep Quality  
-- Mark (Overall Impression)  
-- Like (Preference Indicator)
+Where the original research focused on hotel-aspect sentiment at a controlled academic scale, this project evolves the pipeline into a **full production-grade, multi-aspect ABSA system** equipped with:
 
-This repository is created by **Wiqi Lee** (Twitter/X: **@wiqi_lee**).
+- Expanded aspect vocabularies through **TF-ICF (100%)**  
+- A more expressive **AC3 semantic similarity model**  
+- Robust **cue-boosting mechanisms** for cross-aspect disambiguation  
+- Automatic multi-aspect selection  
+- Weighted global sentiment verdicts  
+- A fully interactive **Streamlit interface**  
+
+In essence, this repository represents a **modern, practical, and significantly enhanced continuation** of the research principles established in the 2019 publication—transforming them from theoretical experimentation into a polished, end-to-end tool suitable for real-world multilingual review analysis.
+
 
 ---
 
