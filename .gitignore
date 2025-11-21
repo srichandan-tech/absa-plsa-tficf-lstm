@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+.DS_Store
+
+# Model files
+models/*.h5
+models/*.keras
+models/tokenizer.pkl
+models/aspect_vocab.json
+
+# Data
+data/raw/
+data/external/*.zip
+
+# Streamlit cache
+.streamlit/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large external embeddings
+data/external/glove.6B.100d.txt
+
+# Optional: training outputs & models
+data/output/
+models/lstm/*.h5
+models/lstm/*.keras
