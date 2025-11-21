@@ -42,8 +42,6 @@ This repository extends that foundational research into a **modernized, producti
 In contrast to the original paper, which used a smaller set of hotel aspects, this implementation adopts **six standardized aspects** for broader generalization and clearer sentiment separation:  
 **Location, Service, Cleanliness, Sleep Quality, Mark, and Like.**
 
----
-
 
 ---
 
