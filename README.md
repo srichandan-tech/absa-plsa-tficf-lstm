@@ -96,28 +96,28 @@ If Sastrawi is missing, it falls back to a lightweight tokenizer.
 ---
 
 absa-plsa-tficf-lstm/
-├─ data/
-│  ├─ external/
-│  │  └─ glove.6B.100d.txt        # GloVe embeddings (required)
-│  └─ raw/
-│     └─ reviews.csv              # Training input
-├─ models/
-│  └─ lstm/                       # Saved LSTM models (mono or per-aspect)
-├─ src/
-│  ├─ __init__.py
-│  ├─ config.py                   # Global config (aspects, thresholds, paths)
-│  ├─ text_cleaner.py             # Cleaner preserving bigrams, negations
-│  ├─ plsa.py                     # PLSA topic model (EM)
-│  ├─ tf_icf.py                   # TF-ICF expansion per aspect
-│  ├─ semantic_similarity.py      # AC3 similarity + boosting
-│  ├─ lstm_model.py               # GloVe + LSTM sentiment model
-│  ├─ pipeline_train.py           # Full training pipeline
-│  └─ pipeline_infer.py           # Final robust inference engine
-├─ streamlit_app.py               # Streamlit UI entry point
-├─ requirements.txt
-├─ README.md
-├─ .gitignore
-└─ LICENSE
+├── data/
+│   ├── external/
+│   │   └── glove.6B.100d.txt        # Required GloVe embeddings
+│   └── raw/
+│       └── reviews.csv              # Training input
+├── models/
+│   └── lstm/                        # Saved LSTM sentiment models
+├── src/
+│   ├── __init__.py
+│   ├── config.py                    # Global config (aspects, thresholds, paths)
+│   ├── text_cleaner.py              # Cleaner preserving bigrams/negations
+│   ├── plsa.py                      # PLSA topic modeling (EM)
+│   ├── tf_icf.py                    # TF-ICF vocabulary expansion
+│   ├── semantic_similarity.py       # AC3 similarity + aspect boosting
+│   ├── lstm_model.py                # GloVe + LSTM sentiment classifier
+│   ├── pipeline_train.py            # Full training pipeline
+│   └── pipeline_infer.py            # Final robust inference engine
+├── streamlit_app.py                 # Streamlit interface
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── LICENSE
 
 ---
 
@@ -152,5 +152,5 @@ absa-plsa-tficf-lstm/
 
 ## 📬 Contact
 Created by **Wiqi Lee**  
-Twitter/X: **[@wiqi_lee](https://x.com/wiqi_lee)**  
+Twitter/X: **@wiqi_lee**  
 Feel free to reach out for collaboration or research discussion.
