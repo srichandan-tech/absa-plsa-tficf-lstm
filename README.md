@@ -96,28 +96,32 @@ If Sastrawi is missing, it falls back to a lightweight tokenizer.
 ---
 
 absa-plsa-tficf-lstm/
-├── data/
-│   ├── external/
-│   │   └── glove.6B.100d.txt        # Required GloVe embeddings
-│   └── raw/
-│       └── reviews.csv              # Training input
-├── models/
-│   └── lstm/                        # Saved LSTM sentiment models
-├── src/
-│   ├── __init__.py
-│   ├── config.py                    # Global config (aspects, thresholds, paths)
-│   ├── text_cleaner.py              # Cleaner preserving bigrams/negations
-│   ├── plsa.py                      # PLSA topic modeling (EM)
-│   ├── tf_icf.py                    # TF-ICF vocabulary expansion
-│   ├── semantic_similarity.py       # AC3 similarity + aspect boosting
-│   ├── lstm_model.py                # GloVe + LSTM sentiment classifier
-│   ├── pipeline_train.py            # Full training pipeline
-│   └── pipeline_infer.py            # Final robust inference engine
-├── streamlit_app.py                 # Streamlit interface
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── LICENSE
+├── 📁 data/
+│   ├── 📂 external/
+│   │   └── 📄 glove.6B.100d.txt        # Required GloVe embeddings
+│   └── 📂 raw/
+│       └── 📄 reviews.csv              # Training input (user-provided)
+├── 📁 models/
+│   └── 📂 lstm/                        # Saved LSTM sentiment models
+├── 📁 scripts/
+│   ├── 🛠️ check_predictions.py         # Helper: sanity-check outputs
+│   └── 🛠️ evaluate_model.py            # Helper: offline evaluation
+├── 📁 src/
+│   ├── 📄 __init__.py
+│   ├── ⚙️ config.py                    # Global config (aspects, thresholds, paths)
+│   ├── 🧹 text_cleaner.py              # Cleaner preserving bigrams/negations
+│   ├── 📊 plsa.py                      # PLSA topic modeling (EM)
+│   ├── 🧮 tf_icf.py                    # TF-ICF vocabulary expansion
+│   ├── 🔍 semantic_similarity.py       # AC3 similarity + aspect boosting
+│   ├── 🤖 lstm_model.py                # GloVe + LSTM sentiment classifier
+│   ├── 🔧 pipeline_train.py            # Full training pipeline
+│   └── 🚀 pipeline_infer.py            # Final robust inference engine
+├── 🖥️ streamlit_app.py                 # Streamlit UI entry point
+├── 📦 requirements.txt
+├── 📘 README.md
+├── 🗑️ .gitignore
+└── 📜 LICENSE
+
 
 ---
 
