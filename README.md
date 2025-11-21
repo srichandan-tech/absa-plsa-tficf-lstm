@@ -1,22 +1,48 @@
-This project is also **inspired by my own published research**, titled:
+# ABSA (Aspect-Based Sentiment Analysis) — PLSA + TF-ICF + LSTM  
+Full Multi-Aspect Pipeline with Streamlit App
 
+This project implements a complete ABSA pipeline inspired by academic work on topic modeling and aspect expansion.  
+It combines:
+
+- **PLSA** — latent topic discovery  
+- **TF-ICF (100%)** — expand vocabulary for each aspect cluster  
+- **Semantic Similarity (AC3)** — map documents to canonical aspects  
+- **GloVe Word Embedding + LSTM** — per-aspect (or mono) sentiment classifier  
+- **Streamlit Application** — for interactive inference, visualization, and optional training  
+
+The system predicts sentiment for **six canonical aspects**:
+- Location  
+- Service  
+- Cleanliness  
+- Sleep Quality  
+- Mark (Overall Impression)  
+- Like (Preference Indicator)
+
+This repository is created by **Wiqi Lee**  
+Twitter/X: [**@wiqi_lee**](https://twitter.com/wiqi_lee)
+
+---
+
+## 📘 Research Background & Inspiration
+
+This implementation is inspired by my own peer-reviewed publication:  
 **“Sentiment Analysis of Hotel Aspect Using Probabilistic Latent Semantic Analysis, Word Embedding and LSTM”**  
-International Journal of Intelligent Engineering and Systems (IJIES), 2019  
+International Journal of Intelligent Engineering & Systems, 2019  
 DOI: **10.22266/ijies2019.0831.26**  
-Full text: https://www.inass.org/2019/2019083126.pdf
+PDF: https://www.inass.org/2019/2019083126.pdf
 
-The methodology in this repository builds upon and significantly extends the core ideas introduced in that paper—namely the integration of **PLSA for aspect discovery**, **word embedding for semantic representation**, and **LSTM for sentiment classification**.  
+The original study explored aspect extraction using **PLSA**, enhanced aspect representation using **Word Embedding**, and sentiment classification with **LSTM networks**.  
+This repository extends that foundational research into a **modernized, production-ready implementation** featuring:
 
-Where the original research focused on hotel-aspect sentiment at a controlled academic scale, this project evolves the pipeline into a **full production-grade, multi-aspect ABSA system** equipped with:
+- Stronger semantic similarity mapping (AC3 + cue boosting)  
+- TF-ICF-based aspect vocabulary expansion  
+- A robust inference engine for multi-aspect prediction  
+- A polished Streamlit interface for end-to-end experimentation  
 
-- Expanded aspect vocabularies through **TF-ICF (100%)**  
-- A more expressive **AC3 semantic similarity model**  
-- Robust **cue-boosting mechanisms** for cross-aspect disambiguation  
-- Automatic multi-aspect selection  
-- Weighted global sentiment verdicts  
-- A fully interactive **Streamlit interface**  
+In contrast to the original paper, which used a smaller set of hotel aspects, this implementation adopts **six standardized aspects** for broader generalization and clearer sentiment separation:  
+**Location, Service, Cleanliness, Sleep Quality, Mark, and Like.**
 
-In essence, this repository represents a **modern, practical, and significantly enhanced continuation** of the research principles established in the 2019 publication—transforming them from theoretical experimentation into a polished, end-to-end tool suitable for real-world multilingual review analysis.
+---
 
 
 ---
